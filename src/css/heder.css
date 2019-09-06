@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+/* 导航条的样式 */
+.nav {
+    width: 100%;
+    height: 32px;
+    background: #f4f4f4;
+    line-height: 32px;
+    font-size: 12px;
+}
+
+/* 导航主体 */
+.nav-main {
+    height: 32px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+.pull-left .iconfont {
+    font-size: 12px;
+}
+
+/* 提示警告文本 */
+.pull-left .hint,
+.hint-iconfont {
+    color: #d71d32;
+}
+
+.nav-hint {
+    margin-left: 20px;
+}
+
+/* 导航条每个盒子的距离 */
+.pull-left {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+/* 导航右边盒子a标签 */
+.pull-right .pull-left a {
+    color: #8e8e8e;
+    text-decoration: nones
+}
+
+/* nav最左边的二级导航样式 */
+.pull-left .yoho-list {
+    width: 170px;
+    padding: 20px 0px 20px 20px;
+    background-color: #f4f4f4;
+    position: absolute;
+    top: 32px;
+    display: none;
+    z-index: 10;
+}
+
+.pull-left .yoho {
+    color: #000;
+}
+
+.pull-left .yoho-group {
+    font-size: 14px;
+    color: #9196a0;
+    text-decoration: none
+}
+
+/* 二级导航隐藏 */
+.nav-left:hover.pull-left .yoho-list {
+    display: block;
+}
+
+/* 导航最左边盒子效果 */
+.nav-left:hover {
+    background-color: #eaeceb;
+}
+
+/* 微信图标和文字样式 */
+.weixin .iconfont,
+#weixin1 {
+    color: #86bf4a;
+}
+
+/*手机图标和文字样式 */
+.phone .iconfont,
+#phone1 {
+    color: #d71d32
+}
+
+/* 客户服务二级导航 */
+.kehu-list {
+    width: 88px;
+    position: absolute;
+    top: 32px;
+    z-index: 100;
+    display: none;
+    /* opacity: 0;  */
+}
+
+.kehu-list li {
+    width: 88px;
+    height: 33px;
+    border: 1px solid #c9c9c9;
+    text-align: center;
+    background: #eaeceb;
+}
+
+.kehu-list li a {
+    display: inline-block;
+    width: 88px;
+    height: 33px;
+    color: #8e8e8e;
+    text-decoration: none
+}
+
+/* 客户服务鼠标移入 */
+.kehufuwu:hover {
+    background: #eaeceb
+}
+
+/* .kehufuwu:hover .kehu-list{
+ display: block
+} */
+/* 微信二维码 */
+.weixin,
+.phone {
+    position: relative;
+}
+
+.weixin:hover {
+    background-color: #eaeceb
+}
+
+.weixin:hover .weixin-erweima {
+    display: block
+}
+
+.weixin-erweima,
+.phone-erweima {
+    width: 146px;
+    padding: 20px 0px 14px;
+    position: absolute;
+    top: 32px;
+    left: -26px;
+    background-color: #f4f4f4;
+    display: none;
+    z-index: 100;
+}
+
+.erweima-img {
+    padding: 0px 25px 0px;
+}
+
+.weixin-erweima span {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.phone-erweima span {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.phone:hover {
+    background-color: #eaeceb
+}
+
+.phone:hover .phone-erweima {
+    display: block
+}
+
+/* 头部导航的第二层 */
+.nav-center {
+    width: 100%;
+    position: relative;
+}
+
+/* 左边盒子 */
+.nav-center-left {
+    margin-top: 45px;
+}
+
+.nav-center-left h5:nth-child(1) a {
+    font-size: 16px;
+    color: #000
+}
+
+.nav-center-left h5:nth-child(2) a {
+    font-size: 12px;
+    color: #8e8e8e
+}
+
+/* logo */
+.logo-img {
+    width: 182px;
+    height: 53px;
+    margin-top: 20px;
+    position: absolute;
+    top: 18px;
+    left: 530px;
+}
+
+/* 右边的盒子 */
+.nav-center-right {
+    width: 378px;
+    margin-top: 50px;
+    position: relative;
+}
+
+/* 搜索框 */
+.se {
+    width: 320px;
+    height: 28px;
+    border: 1px solid #3a3a3a;
+}
+
+.sebox {
+    width: 240px;
+    height: 100%;
+    border: none;
+    padding: 1px 0px 1px 10px;
+
+}
+
+.sebox:focus {
+    outline: none;
+}
+
+.sebtn {
+    width: 74px;
+    height: 100%;
+    border: none;
+    background: #3a3a3a;
+    color: #fff;
+}
+
+.pull-left .kwd {
+    font-size: 12px
+}
+
+.shop-logo {
+    position: absolute;
+    top: -8px;
+    right: 7px;
+    cursor: pointer;
+}
+
+.shop-logo .cart-logo {
+    font-size: 30px;
+    color: #000
+}
+
+/* 第三层导航 */
+.nav-bottom {
+    width: 100%;
+    height: 40px;
+    background-color: #3a3a3a;
+}
+
+.nav-bottom li {
+    margin-right: 36px;
+    padding-right: 46px;
+}
+
+.nav-bottom li a {
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+
+/* 给每个a标签价下划线 */
+.nav-bottom li a:hover {
+    border-bottom: 2px solid #fff
+}

@@ -1,0 +1,178 @@
+/* 页面底部 */
+.yoho-footer {
+    width: 100%;
+    background: #000;
+    font-size: 12px;
+}
+
+/* 第一层 */
+.promise {
+    padding: 20px 0px 10px;
+}
+
+.center-content {
+    width: 1150px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.promise>.center-content>.left {
+    float: left;
+    line-height: 30px;
+    margin-right: 60px
+}
+
+/* 第二层 */
+.footer-help > .center-content{
+    padding: 15px 0;
+    border-top:1px solid #666
+}
+.footer-help .clearfix {
+    display: flex;
+    justify-content: space-around
+}
+
+.footer-help .clearfix .left {
+    width: 180px
+}
+.clearfix .left span{
+    color: #fff
+}
+.clearfix .left a{
+    color: #666
+}
+/* 第三层 */
+.footer-link .center-content{
+     border-bottom:1px solid #666
+}
+.footer-link .about-us .left-flag{
+    width: 300px;
+    float: left;
+}
+.footer-link .about-us .links{
+    width: 850px;
+    float: left;
+}
+.footer-link .about-us .links a{
+    display: block;
+    float: left;
+    position: relative;
+    margin-right: 24px;
+    color: #666;
+}
+.footer-link .about-us .links a::after{
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #666;
+    position: absolute;
+    right: -13px;
+    top: 3px
+}
+.footer-link .about-us .links span{
+    padding: 0 10px;
+    position: absolute;
+    left: 0
+}
+.copyright p{
+    text-align: center
+}
+/* 第四层 */
+.link-info{
+    float: left;
+}
+.footer-link-container .center-content{
+    padding-top: 15px;
+    padding-bottom: 15px
+    }
+.link-section{
+    float: right;
+    width: 1085px;
+    color: #666;
+    position: relative;
+}
+.link-section .up{
+    position: absolute;
+
+}
+.link-section .down{
+    position: absolute;
+
+}
+.footer-link-container .clearfix li{
+    float: left;
+    margin-left: 22px;
+}
+/* 悬浮框 */
+.qrcode-hover-box{
+    position: fixed;
+    right: 20px;
+    bottom: 300px
+}
+.download-app-box{
+    width: 260px;
+    height: 180px;
+    background-color:#c9c9c9;
+    position: absolute;
+    right: 80px;
+    top:-60px;
+}
+.download-app-left{
+    width: 130px;
+    float: left;
+}
+.qr-code-img{
+    margin: 10px auto;
+    width: 96px;
+    height: 96px;
+}
+.download-app-left img{
+    width: 96px;
+    height: 96px;
+}
+.download-app-right{
+    width: 130px;
+    float: left;
+}
+.download-app-right img{
+    width: 96px;
+    height: 96px;
+}
+.qr-words{
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+/* 悬浮框按钮 */
+.qrcode-hover-box .layer-box1{
+    height: 60px;
+    width:60px;
+    display: block;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    background: #666;
+    position: absolute;
+    right: 0;
+}
+.qrcode-hover-box .layer-box1:hover{
+    opacity: 0.5;
+}
+.qrcode-hover-box:hover .download-app-box{
+  display: block
+}
+/* 回到顶部 */
+.layer-box2{
+    width: 60px;
+    height: 60px;
+    background-color: #666;
+    position: fixed;
+    right: 20px;
+    bottom: 150px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    display: none
+}

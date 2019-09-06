@@ -1,0 +1,760 @@
+/* 主页 */
+* {
+    margin: 0;
+    padding: 0
+}
+
+/* 导航条的样式 */
+.nav {
+    width: 100%;
+    height: 32px;
+    background: #f4f4f4;
+    line-height: 32px;
+    font-size: 12px;
+}
+
+/* 导航主体 */
+.nav-main {
+    height: 32px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+.pull-left .iconfont {
+    font-size: 12px;
+}
+
+/* 提示警告文本 */
+.pull-left .hint,
+.hint-iconfont {
+    color: #d71d32;
+}
+
+.nav-hint {
+    margin-left: 20px;
+}
+
+/* 导航条每个盒子的距离 */
+.pull-left {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+/* 导航右边盒子a标签 */
+.pull-right .pull-left a {
+    color: #8e8e8e;
+    text-decoration: nones
+}
+
+/* nav最左边的二级导航样式 */
+.pull-left .yoho-list {
+    width: 170px;
+    padding: 20px 0px 20px 20px;
+    background-color: #f4f4f4;
+    position: absolute;
+    top: 32px;
+    display: none;
+    z-index: 10;
+}
+
+.pull-left .yoho {
+    color: #000;
+}
+
+.pull-left .yoho-group {
+    font-size: 14px;
+    color: #9196a0;
+    text-decoration: none
+}
+
+/* 二级导航隐藏 */
+.nav-left:hover.pull-left .yoho-list {
+    display: block;
+}
+
+/* 导航最左边盒子效果 */
+.nav-left:hover {
+    background-color: #eaeceb;
+}
+
+/* 微信图标和文字样式 */
+.weixin .iconfont,
+#weixin1 {
+    color: #86bf4a;
+}
+
+/*手机图标和文字样式 */
+.phone .iconfont,
+#phone1 {
+    color: #d71d32
+}
+
+/* 客户服务二级导航 */
+.kehu-list {
+    width: 88px;
+    position: absolute;
+    top: 32px;
+    z-index: 100;
+    display: none;
+    /* opacity: 0;  */
+}
+
+.kehu-list li {
+    width: 88px;
+    height: 33px;
+    border: 1px solid #c9c9c9;
+    text-align: center;
+    background: #eaeceb;
+}
+
+.kehu-list li a {
+    display: inline-block;
+    width: 88px;
+    height: 33px;
+    color: #8e8e8e;
+    text-decoration: none
+}
+
+/* 客户服务鼠标移入 */
+.kehufuwu:hover {
+    background: #eaeceb
+}
+
+/* .kehufuwu:hover .kehu-list{
+ display: block
+} */
+/* 微信二维码 */
+.weixin,
+.phone {
+    position: relative;
+}
+
+.weixin:hover {
+    background-color: #eaeceb
+}
+
+.weixin:hover .weixin-erweima {
+    display: block
+}
+
+.weixin-erweima,
+.phone-erweima {
+    width: 146px;
+    padding: 20px 0px 14px;
+    position: absolute;
+    top: 32px;
+    left: -26px;
+    background-color: #f4f4f4;
+    display: none;
+    z-index: 100;
+}
+
+.erweima-img {
+    padding: 0px 25px 0px;
+}
+
+.weixin-erweima span {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.phone-erweima span {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.phone:hover {
+    background-color: #eaeceb
+}
+
+.phone:hover .phone-erweima {
+    display: block
+}
+
+/* 头部导航的第二层 */
+.nav-center {
+    width: 100%;
+    position: relative;
+}
+
+/* 左边盒子 */
+.nav-center-left {
+    margin-top: 45px;
+}
+
+.nav-center-left h5:nth-child(1) a {
+    font-size: 16px;
+    color: #000
+}
+
+.nav-center-left h5:nth-child(2) a {
+    font-size: 12px;
+    color: #8e8e8e
+}
+
+/* logo */
+.logo-img {
+    width: 182px;
+    height: 53px;
+    margin-top: 20px;
+    position: absolute;
+    top: 18px;
+    left: 530px;
+}
+
+/* 右边的盒子 */
+.nav-center-right {
+    width: 378px;
+    margin-top: 50px;
+    position: relative;
+}
+
+/* 搜索框 */
+.se {
+    width: 320px;
+    height: 28px;
+    border: 1px solid #3a3a3a;
+}
+
+.sebox {
+    width: 240px;
+    height: 100%;
+    border: none;
+    padding: 1px 0px 1px 10px;
+
+}
+
+.sebox:focus {
+    outline: none;
+}
+
+.sebtn {
+    width: 74px;
+    height: 100%;
+    border: none;
+    background: #3a3a3a;
+    color: #fff;
+}
+
+.pull-left .kwd {
+    font-size: 12px
+}
+
+.shop-logo {
+    position: absolute;
+    top: -8px;
+    right: 7px;
+    cursor: pointer;
+}
+
+.shop-logo .cart-logo {
+    font-size: 30px;
+    color: #000
+}
+
+/* 第三层导航 */
+.nav-bottom {
+    width: 100%;
+    height: 40px;
+    background-color: #3a3a3a;
+}
+
+.nav-bottom li {
+    margin-right: 36px;
+    padding-right: 46px;
+}
+
+.nav-bottom li a {
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+
+/* 给每个a标签价下划线 */
+.nav-bottom li a:hover {
+    border-bottom: 2px solid #fff
+}
+
+/* 轮播图 */
+#slide {
+    margin-top: 10px
+}
+
+.slideshow {
+    height: 450px;
+    position: relative;
+}
+
+/* 轮播图左右按钮 */
+.slideshow .left-lg {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    font-size: 40px;
+    color: #59585a;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+    opacity: 0.55;
+}
+
+.slideshow .left-lg:hover {
+    opacity: 1;
+}
+
+.slideshow .right-lg {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    font-size: 40px;
+    color: #59585a;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+    opacity: 0.55;
+}
+
+.slideshow .right-lg:hover {
+    opacity: 1;
+}
+
+/* 小轮播图 */
+.smslide {
+    width: 1148px;
+    height: 54px;
+    margin: 5px auto;
+
+}
+
+.smslide ul {
+    margin-left: 4px
+}
+
+.smslide ul li {
+    width: 138px;
+    height: 54px;
+    float: left;
+    margin-right: 5px;
+}
+
+.smslide li img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 主体内容 */
+/* 人气单品 */
+.singlehot {
+    width: 1158px;
+    margin: 0 auto
+}
+
+.title-rq {
+    margin-top: 80px;
+    margin-bottom: 40px
+}
+
+.floor-title {
+    width: 298px;
+    height: 31px;
+    border: 1px solid #000;
+    line-height: 31px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto
+}
+
+.singlehot .g-list li {
+    float: left;
+    margin: 0px 0px 8px 8px
+}
+
+/* 人气单品 */
+.img-brand {
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+    position: relative;
+}
+.img-brand:hover .img-brand-switch >a{
+opacity: 0.5;
+}
+.img-brand .img-item {
+    float: left;
+    margin-right: 8px;
+}
+.img-brand .img-item img:hover{
+    opacity: 0.8;
+}
+.g-list {
+    overflow: hidden;
+}
+.img-brand-switch .prev{
+    position: absolute;
+    top: 50%;
+    margin: -20px 0 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 100;
+    background-color: #fff;
+    opacity: 0;
+    font-size: 40px;
+    text-decoration: none
+}
+.img-brand-switch .next{
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    margin: -20px 0 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 100;
+    background-color: #fff;
+    opacity: 0;
+    font-size: 40px;
+    text-decoration: none;
+}
+.prev:hover{
+   opacity: 1;
+}
+.next:hover{
+   opacity: 1;
+}
+/* logo */
+.logo-brand {
+    width: 100%;
+    height: 282px;
+}
+
+.logo-brand ul li {
+    float: left;
+    margin: 8px 8px 0 0
+}
+
+.logo-brand ul li:nth-child(6) {
+    width: 185px;
+    height: 86px;
+    background: url(../img/logo-brand.png) no-repeat 50%
+}
+
+.logo-brand ul li:nth-child(6) a {
+    width: 185px;
+    font-size: 32px;
+    color: #000;
+}
+
+.logo-brand ul li:nth-child(18) {
+    width: 185px;
+    height: 86px;
+}
+
+.logo-brand ul li:nth-child(18) a {
+    display: block;
+    width: 185px;
+    font-size: 16px;
+    line-height: 86px;
+    text-align: center;
+    color: #000
+}
+
+/* 潮流上装*/
+
+.imgopacity {
+    float: left;
+    margin-right: 8px;
+}
+
+/* 第一行 */
+/* 第一列 导航 */
+.tpl-nav {
+    width: 185px;
+}
+
+.tpl-keywords {
+    margin-bottom: 8px;
+}
+
+.tpl-keywords .keywords0 {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.tpl-keywords .lazy {
+    font-size: 100%
+}
+
+.tpl-category {
+    width: 185px;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+}
+
+.tpl-category a {
+    height: 38px;
+    color: #000;
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+/* 第二列 */
+.tx {
+    margin-bottom: 4px
+}
+
+/* 第三列 */
+.tpl-types {
+    width: 570px;
+}
+
+.tpl-types ul li {
+    float: left;
+    margin-left: 5px
+}
+
+/* 第二行 */
+.tpl-products ul li {
+    float: left;
+    margin-right: 8px
+}
+
+/* 新品上市 */
+.productlist ul{
+	width: 1172px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.productlist li{
+	width: 222px;
+    height: 408px;
+    list-style: none;
+    float: left;
+    margin-right: 10px
+}
+.productlist li a{
+    text-decoration: none
+}
+.productlist li img{
+    width: 100%;
+    height: 298px;
+}
+.productlist li img:hover{
+    opacity: 0.7;
+}
+.productlist li a p{
+	margin-top: 16px;
+    line-height: 1.5;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.productlist li > p{
+    margin-top: 5px;
+    line-height: 22px;
+    text-align: center
+}
+/* 页面底部 */
+.yoho-footer {
+    width: 100%;
+    background: #000;
+    font-size: 12px;
+}
+
+/* 第一层 */
+.promise {
+    padding: 20px 0px 10px;
+}
+
+.center-content {
+    width: 1150px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.promise>.center-content>.left {
+    float: left;
+    line-height: 30px;
+    margin-right: 60px
+}
+
+/* 第二层 */
+.footer-help > .center-content{
+    padding: 15px 0;
+    border-top:1px solid #666
+}
+.footer-help .clearfix {
+    display: flex;
+    justify-content: space-around
+}
+
+.footer-help .clearfix .left {
+    width: 180px
+}
+.clearfix .left span{
+    color: #fff
+}
+.clearfix .left a{
+    color: #666
+}
+/* 第三层 */
+.footer-link .center-content{
+     border-bottom:1px solid #666
+}
+.footer-link .about-us .left-flag{
+    width: 300px;
+    float: left;
+}
+.footer-link .about-us .links{
+    width: 850px;
+    float: left;
+}
+.footer-link .about-us .links a{
+    display: block;
+    float: left;
+    position: relative;
+    margin-right: 24px;
+    color: #666;
+}
+.footer-link .about-us .links a::after{
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #666;
+    position: absolute;
+    right: -13px;
+    top: 3px
+}
+.footer-link .about-us .links span{
+    padding: 0 10px;
+    position: absolute;
+    left: 0
+}
+.copyright p{
+    text-align: center
+}
+/* 第四层 */
+.link-info{
+    float: left;
+}
+.footer-link-container .center-content{
+    padding-top: 15px;
+    padding-bottom: 15px
+    }
+.link-section{
+    float: right;
+    width: 1085px;
+    color: #666;
+    position: relative;
+}
+.link-section .up{
+    position: absolute;
+
+}
+.link-section .down{
+    position: absolute;
+
+}
+.footer-link-container .clearfix li{
+    float: left;
+    margin-left: 22px;
+}
+/* 悬浮框 */
+.qrcode-hover-box{
+    position: fixed;
+    right: 20px;
+    bottom: 300px
+}
+.download-app-box{
+    width: 260px;
+    height: 180px;
+    background-color:#c9c9c9;
+    position: absolute;
+    right: 80px;
+    top:-60px;
+}
+.download-app-left{
+    width: 130px;
+    float: left;
+}
+.qr-code-img{
+    margin: 10px auto;
+    width: 96px;
+    height: 96px;
+}
+.download-app-left img{
+    width: 96px;
+    height: 96px;
+}
+.download-app-right{
+    width: 130px;
+    float: left;
+}
+.download-app-right img{
+    width: 96px;
+    height: 96px;
+}
+.qr-words{
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+/* 悬浮框按钮 */
+.qrcode-hover-box .layer-box1{
+    height: 60px;
+    width:60px;
+    display: block;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    background: #666;
+    position: absolute;
+    right: 0;
+}
+.qrcode-hover-box .layer-box1:hover{
+    opacity: 0.5;
+}
+.qrcode-hover-box:hover .download-app-box{
+  display: block
+}
+/* 回到顶部 */
+.layer-box2{
+    width: 60px;
+    height: 60px;
+    background-color: #666;
+    position: fixed;
+    right: 20px;
+    bottom: 150px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    display: none
+}

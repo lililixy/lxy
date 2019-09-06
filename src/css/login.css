@@ -1,0 +1,204 @@
+.passport-page {
+    margin-right: auto;
+    margin-left: auto;
+    height: 734px;
+    width: 1150px;
+}
+.passport-cover {
+    float: left;
+    margin: 107px 0;
+    width: 575px;
+}
+.passport-cover .cover-content {
+    padding: 50px 0;
+    width: 100%;
+    height: 318px;
+    border-right: 1px solid #dfdfdf;
+}
+.passport-cover .cover-img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 252px;
+    height: 190px;
+}
+
+/* 登录 */
+
+.login-page .content {
+    margin-top: 107px;
+    padding-left: 85px;
+}
+.login-page .content {
+    float: left;
+    margin-top: 107px;
+    padding-left: 85px;
+}
+.login-page .login-ul>div>li {
+    margin-bottom: 25px;
+}
+.login-page .switch-login-type {
+    width: 270px;
+    height: 46px;
+    margin-bottom: 25px;
+    background-color: #fff;
+}
+.login-page .title {
+    float: left;
+    font-size: 20px;
+}
+.login-page .right {
+    float: right;
+}
+.login-page .country-code {
+    color: #b9b9b9;
+    cursor: pointer;
+    margin-right: 55px
+}
+.login-page .country-code em{
+    font-style: normal
+}
+.login-page .country-list {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 1;
+    display: none;
+    padding: 0 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #fff;
+}
+.login-page .relative {
+    position: relative;
+    overflow: hidden;
+}
+.login-page .switch {
+    width: 100%;
+    height: 27px;
+    background-image: url(../img/bj.png);
+    background-position: -323px 0;
+    background-size: 595px 298px;
+    border-radius: 13px;
+    font-size: 14px;
+}
+.login-page .switch .left.selected {
+    background-image: url(../img/bj.png);
+    background-position: -323px -35px;
+    background-size: 595px 298px;
+    color: #fff;
+}
+.login-page .switch .left {
+    width: 146px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    border-radius: 13px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+.login-page .right {
+    float: right;
+}
+.login-page .switch .right {
+    width: 146px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    border-radius: 13px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.passport-page .err-tip {
+    position: absolute;
+    top: 8px;
+    left: 285px;
+    padding: 6px 0;
+    color: red;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.login-page .caps-lock {
+    position: absolute;
+    top: 8px;
+    left: 278px;
+    padding: 0 20px;
+    height: 27px;
+    border: #ffe57d;
+    background: #fff6d2;
+    color: #666;
+    white-space: nowrap;
+    line-height: 30px;
+}
+
+.passport-page .input {
+    width: 268px;
+    height: 43px;
+    border: 1px solid #dbdbdb;
+    color: rgba(0,0,0,.5);
+    text-indent: 10px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.img-check-header {
+    font-size: 13px;
+    line-height: 13px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #b0b0b0;
+}
+.img-check-pics {
+    display: inline-block;
+    width: 277px;
+    height: 62px;
+    padding: 0;
+    position: relative;
+}
+.img-check-pics li {
+    float: left;
+    background: hsla(0,0%,100%,0) no-repeat;
+    width: 60px!important;
+    height: 60px!important;
+    border: 1px solid #e0e0e0;
+    margin-right: 7px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.img-check-pics img {
+    width: 240px;
+    height: 240px;
+}
+.img-check-main .img-check-tip {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    font-size: 13px;
+    line-height: 19px;
+    height: 19px;
+    color: red;
+}
+
+.passport-page .btn {
+    display: block;
+    width: 97%;
+    height: 46px;
+    background-color: #ff1901;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 20px;
+    line-height: 46px;
+    cursor: pointer;
+}
+.login-page .other-opts {
+    color: #b9b9b9;
+    font-size: 14px;
+}
+.login-page .right {
+  float: right;
+}

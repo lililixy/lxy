@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YOHO主页</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../../iconfont/font_2j7bkpbatcc/iconfont.css">
+</head>
+
+<body>
+    <!-- 主页 -->
+    <!-- 头部导航 -->
+    <div class="heder">
+        <div class="nav">
+            <div class="container nav-main">
+                <div class="pull-left nav-left">
+                    <span class="iconfont">&#xe67a;</span>
+                    <a href="#" class="yoho">YOHO!BUY 有货</a>
+                    <ul class="yoho-list">
+                        <li><a href="#" class="yoho-group" data-en="YOHO!" data-cn="集团官网">YOHO!</a></li>
+                        <li><a href="#" class="yoho-group" data-en="YOHO!BOYS" data-cn="男生潮流">YOHO!BOYS</a></li>
+                        <li><a href="#" class="yoho-group" data-en="YOHO!GIRLS" data-cn="女生潮流">YOHO!GIRLS</a></li>
+                        <li><a href="#" class="yoho-group" data-en="Mars" data-cn="新鲜好去处">Mars</a></li>
+                        <li><a href="#" class="yoho-group" data-en="YO'HOOD" data-cn="潮流嘉年华">YO'HOOD</a></li>
+                    </ul>
+                </div>
+                <div class="pull-left nav-hint">
+                    <span class="iconfont hint-iconfont">&#xea5a;</span>
+                    <a href="#" class="hint">关于诈骗的重要提醒</a>
+                </div>
+                <div class="pull-right">
+                    <ul>
+                        <li class="pull-left">
+                                Hi~<span class="yhuser"></span>
+                                <a class="quit" style="display: none;cursor: pointer;">[退出登录]</a>
+                            <a href="login.html" class="log">[ 请登录 ]</a>
+                            <a href="sign.html" class="sig">[ 免费注册 ]</a>
+                        </li>
+                        <li class="pull-left">
+                            <a href="#">MY有货</a>
+                            <span></span>
+                        </li>
+                        <li class="pull-left">
+                            <span class=""></span>
+                            <a href="#">我的订单</a>
+                        </li>
+                        <li class="pull-left">
+                            <span class="iconfont">&#xe501;</span>
+                            <a href="#">我的收藏</a>
+                        </li>
+                        <li class="pull-left">
+                            <span class="iconfont">&#xe607;</span>
+                            <a href="#">消息</a>
+                        </li>
+                        <li class="pull-left kehufuwu">
+                            <span class="iconfont">&#xe629;</span>
+                            <a href="#">客户服务</a>
+                            <ul class="kehu-list">
+                                <li><a href="">在线服务</a></li>
+                                <li><a href="">帮助中心</a></li>
+                            </ul>
+                        </li>
+                        <li class="pull-left weixin">
+                            <span class="iconfont">&#xe623;</span>
+                            <a href="#" id="weixin1">关注有货</a>
+                            <div class="weixin-erweima">
+                                <div class="erweima-img">
+                                    <img src="../img/weixinerweima.png">
+                                </div>
+                                <span>微信扫一扫</span>
+                                <span>关注微信号，送球鞋</span>
+                            </div>
+                        </li>
+                        <li class="pull-left phone">
+                            <span class="iconfont">&#xe662;</span>
+                            <a href="#" id="phone1">手机版</a>
+                            <div class="phone-erweima">
+                                <div class="erweima-img">
+                                    <img src="../img/weixinerweima.png">
+                                </div>
+                                <span>下载手机客户端</span>
+                                <span>更多客户端</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <div class="container">
+                <div class="pull-left nav-center-left">
+                    <ul>
+                        <li class="pull-left">
+                            <h5><a href="#">男生</a></h5>
+                            <h5><a href="#">BOYS</a></h5>
+                        </li>
+                        <li class="pull-left">
+                            <h5><a href="#">女生</a></h5>
+                            <h5><a href="#">GIRLS</a></h5>
+                        </li>
+                        <li class="pull-left">
+                            <h5><a href="#">潮童</a></h5>
+                            <h5><a href="#">KIDS</a></h5>
+                        </li>
+                        <li class="pull-left">
+                            <h5><a href="#">创意生活</a></h5>
+                            <h5><a href="#">LIFE STYLE</a></h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pull-left logo-img">
+                    <img src="../img/logo-en.png">
+                </div>
+                <div class="pull-right nav-center-right">
+                    <div>
+                        <form class="se">
+                            <input type="text" placeholder="满额立减￥ 150" class="sebox">
+                            <input type="submit" class="iconfont sebtn" value="&#xe649;">
+                        </form>
+                        <ul>
+                            <li class="pull-left"><a href="#" class="kwd">短袖T恤</a></li>
+                            <li class="pull-left"><a href="#" class="kwd">短裤</a></li>
+                            <li class="pull-left"><a href="#" class="kwd">拖鞋</a></li>
+                            <li class="pull-left"><a href="#" class="kwd">椰子</a></li>
+                            <li class="pull-left"><a href="#" class="kwd">nike</a></li>
+                            <li class="pull-left"><a href="#" class="kwd">欧文</a></li>
+                        </ul>
+                    </div>
+                    <div class="shop-logo">
+                        <span class="iconfont cart-logo">&#xe601;</span>
+                        <div class="shop-cart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-bottom">
+            <ul class="container">
+                <li class="pull-left"><a href="#">新品到着</a></li>
+                <li class="pull-left"><a href="#">品牌一览</a></li>
+                <li class="pull-left"><a href="#">服饰</a></li>
+                <li class="pull-left"><a href="#">鞋履</a></li>
+                <li class="pull-left"><a href="#">包袋</a></li>
+                <li class="pull-left"><a href="#">配饰·其他</a></li>
+                <li class="pull-left"><a href="#">逛</a></li>
+                <li class="pull-left"><a href="#">SALE</a></li>
+                <li class="pull-left"><a href="#">证照\协议</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div id="slide">
+        <div class="slideshow container">
+            <li>
+                <a href="">
+                    <img src="">
+                </a>
+            </li>
+            <a href="##" class="left-lg">&lt;</a>
+            <a href="##" class="right-lg">&gt;</a>
+        </div>
+        <div class="smslide">
+            <ul>
+                <li><a href="#"><img
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/27/16/0146b4cd72b1c913ac2fe4fb80bf69ec19.jpg?imageView2/2/w/138/h/54"></a>
+                </li>
+                <li><a href="#"><img
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/27/16/0166ae35aaedc2fd531122474979ca4500.jpg?imageView2/2/w/138/h/54"></a>
+                </li>
+                <li><a href="#"><img
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/27/16/01d3dc66b364ce3942f237eca25a4df5df.jpg?imageView2/2/w/138/h/54"></a>
+                </li>
+                <li><a href="#"><img
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/27/16/019acc8dc63c86ddda6ff88aed96f6077b.jpg?imageView2/2/w/138/h/54"></a>
+                </li>
+                <li><a href="#"><img
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/27/16/0179d9d87ce577115729d1f27231bf5cce.jpg?imageView2/2/w/138/h/54"></a>
+                </li>
+                <li><a href="#"><img
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/27/16/01cb63c485b6918074ee675e39efe6bb25.jpg?imageView2/2/w/138/h/54"></a>
+                </li>
+                <li><a href="#"><img
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/27/16/018026f30a990876a3cbbae97c135b440f.jpg?imageView2/2/w/138/h/54"></a>
+                </li>
+                <li><a href="#"><img
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/27/16/016b1731418ebe4a7b3156cbbaa7ebddce.jpg?imageView2/2/w/138/h/54"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 页面主体内容 -->
+    <!-- 人气单品 -->
+    <div class="singlehot">
+        <div class="title-rq">
+            <h2 class="floor-title">人气单品</h2>
+        </div>
+        <ul class="g-list">
+            <li><a class="impo0" href="#" target="_blank" title=""><img class="lazy"
+                        data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/28/15/01f23d5a87984c9a6ffa65ff736f63d93d.jpg?imageView2/2/w/185/h/248"
+                        alt=""
+                        src="//img10.static.yhbimg.com/yhb-img01/2019/08/28/15/01f23d5a87984c9a6ffa65ff736f63d93d.jpg?imageView2/2/w/185/h/248"
+                        style="display: inline; opacity: 1;"></a></li>
+            <li><a class="impo1" href="#" target="_blank" title="满减"><img class="lazy"
+                        data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/27/16/018e6c05f7810f31e37be99df8bec0c4c9.jpg?imageView2/2/w/378/h/248"
+                        alt="满减"
+                        src="//img10.static.yhbimg.com/yhb-img01/2019/08/27/16/018e6c05f7810f31e37be99df8bec0c4c9.jpg?imageView2/2/w/378/h/248"
+                        style="display: inline; opacity: 1;"></a></li>
+            <li><a class="impo2" href="#" target="_blank" title=""><img class="lazy"
+                        data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/28/15/0154a1d74ae377446694bf69ac1be839a6.jpg?imageView2/2/w/185/h/248"
+                        alt=""
+                        src="//img10.static.yhbimg.com/yhb-img01/2019/08/28/15/0154a1d74ae377446694bf69ac1be839a6.jpg?imageView2/2/w/185/h/248"
+                        style="display: inline; opacity: 1;"></a></li>
+            <li><a class="impo3" href="#" target="_blank" title=""><img class="lazy"
+                        data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/28/15/0111005dfda4eef2948a374a2a3f9a97c5.jpg?imageView2/2/w/185/h/248"
+                        alt=""
+                        src="//img11.static.yhbimg.com/yhb-img01/2019/08/28/15/0111005dfda4eef2948a374a2a3f9a97c5.jpg?imageView2/2/w/185/h/248"
+                        style="display: inline; opacity: 1;"></a></li>
+            <li><a class="impo4" href="#" target="_blank" title=""><img class="lazy"
+                        data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/28/15/0130cdf4fa31bc9b7fd6921ff6597e8696.jpg?imageView2/2/w/185/h/248"
+                        alt=""
+                        src="//img11.static.yhbimg.com/yhb-img01/2019/08/28/15/0130cdf4fa31bc9b7fd6921ff6597e8696.jpg?imageView2/2/w/185/h/248"
+                        style="display: inline; opacity: 1;"></a></li>
+            <li><a class="impo5" href="#" target="_blank" title=""><img class="lazy"
+                        data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/28/15/012c8cd96f78a84d13aad8b943ad497cd5.jpg?imageView2/2/w/185/h/248"
+                        alt=""
+                        src="//img10.static.yhbimg.com/yhb-img01/2019/08/28/15/012c8cd96f78a84d13aad8b943ad497cd5.jpg?imageView2/2/w/185/h/248"
+                        style="display: inline;"></a></li>
+            <li><a class="impo6" href="#" target="_blank" title=""><img class="lazy"
+                        data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/28/15/013cf5019f82befb0e9b0b6bcb01198ed5.jpg?imageView2/2/w/185/h/248"
+                        alt=""
+                        src="//img10.static.yhbimg.com/yhb-img01/2019/08/28/15/013cf5019f82befb0e9b0b6bcb01198ed5.jpg?imageView2/2/w/185/h/248"
+                        style="display: inline;"></a></li>
+            <li><a class="impo7" href="#" target="_blank" title=""><img class="lazy"
+                        data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/28/15/01f8a11be2391ab5bae6b432567b556b91.jpg?imageView2/2/w/185/h/248"
+                        alt=""
+                        src="//img11.static.yhbimg.com/yhb-img01/2019/08/28/15/01f8a11be2391ab5bae6b432567b556b91.jpg?imageView2/2/w/185/h/248"
+                        style="display: inline; opacity: 1;"></a></li>
+            <li><a class="impo8" href="#" target="_blank" title=""><img class="lazy"
+                        data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/28/15/01b553be63e233746b251e3700f3fa5c14.jpg?imageView2/2/w/185/h/248"
+                        alt=""
+                        src="//img11.static.yhbimg.com/yhb-img01/2019/08/28/15/01b553be63e233746b251e3700f3fa5c14.jpg?imageView2/2/w/185/h/248"
+                        style="display: inline; opacity: 1;"></a></li>
+            <li><a class="impo9" href="#" target="_blank" title="4折封"><img class="lazy"
+                        data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/27/16/0185e5fdd4efa6466889e521b37afaaf43.jpg?imageView2/2/w/378/h/248"
+                        alt="4折封"
+                        src="//img11.static.yhbimg.com/yhb-img01/2019/08/27/16/0185e5fdd4efa6466889e521b37afaaf43.jpg?imageView2/2/w/378/h/248"
+                        style="display: inline; opacity: 1;"></a></li>
+        </ul>
+    </div>
+
+    <!-- 优选品牌 -->
+    <div class="singlehot">
+        <div class="title-rq">
+            <h2 class="floor-title">优选品牌</h2>
+        </div>
+        <div class="img-brand">
+            <ul class="img-list clearfix" style="width: 2316px; margin-left: 0px;">
+                <li class="img-item">
+                    <a href="https://www.yohobuy.com/shop/vans-1284.html" target="_blank" title="">
+                        <img data-original="//img10.static.yhbimg.com/yhb-img01/2019/07/24/11/016aaad4d4d21a8db21e902a3b2fc9419d.jpg?imageView2/2/w/378/h/175"
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/07/24/11/016aaad4d4d21a8db21e902a3b2fc9419d.jpg?imageView2/2/w/378/h/175"
+                            alt="">
+                    </a>
+                </li>
+                <li class="img-item">
+                    <a href="https://www.yohobuy.com/shop/timberland-2642.html" target="_blank" title="">
+                        <img data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/0124d332e8f0f5b09988bcb9a95f7e053c.jpg?imageView2/2/w/378/h/175"
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/0124d332e8f0f5b09988bcb9a95f7e053c.jpg?imageView2/2/w/378/h/175"
+                            alt="">
+                    </a>
+                </li>
+                <li class="img-item">
+                    <a href="https://www.yohobuy.com/shop/levis-1248.html" target="_blank" title="">
+                        <img data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/21/10/01610fc06cc31edcdf274143d0c636bd18.jpg?imageView2/2/w/378/h/175"
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/21/10/01610fc06cc31edcdf274143d0c636bd18.jpg?imageView2/2/w/378/h/175"
+                            alt="">
+                    </a>
+                </li>
+                <li class="img-item">
+                    <a href="https://www.yohobuy.com/shop/converse-1252.html" target="_blank" title="">
+                        <img data-original="//img10.static.yhbimg.com/yhb-img01/2019/06/26/10/011d0476320d41f3a7ccd84f9cd24e44a8.jpg?imageView2/2/w/378/h/175"
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/06/26/10/011d0476320d41f3a7ccd84f9cd24e44a8.jpg?imageView2/2/w/378/h/175"
+                            alt="">
+                    </a>
+                </li>
+                <li class="img-item">
+                    <a href="https://www.yohobuy.com/shop/madness-1482.html" target="_blank" title="">
+                        <img data-original="//img10.static.yhbimg.com/yhb-img01/2019/06/12/10/01a3926685f69f1daf5e7bea1154150c39.jpg?imageView2/2/w/378/h/175"
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/06/12/10/01a3926685f69f1daf5e7bea1154150c39.jpg?imageView2/2/w/378/h/175"
+                            alt="">
+                    </a>
+                </li>
+                <li class="img-item">
+                    <a href="https://www.yohobuy.com/shop/adidas-1258.html" target="_blank" title="">
+                        <img data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/21/10/0132af6abc912a09f961f5482792667431.jpg?imageView2/2/w/378/h/175"
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/21/10/0132af6abc912a09f961f5482792667431.jpg?imageView2/2/w/378/h/175"
+                            alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="img-brand-switch">
+                <a class="prev" href="javascript:;">
+                    &lt;
+                </a>
+                <a class="next" href="javascript:;">
+                   &gt;
+                </a>
+            </div>
+        </div>
+        <div class="logo-brand logos-16" data-shownum="16">
+            <ul>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/gxgjeans-1032.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/07/10/019286883ea5c38088e078dbf04b46d61a.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/07/10/019286883ea5c38088e078dbf04b46d61a.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline; opacity: 1;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/genanx-300.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/0122abb49912c1526bd51cf75d9308c697.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/0122abb49912c1526bd51cf75d9308c697.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline; opacity: 1;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/dickies-1474.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/0132216eb633b1d2816a41ee0f71254bb4.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/0132216eb633b1d2816a41ee0f71254bb4.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline; opacity: 1;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/dc-275.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/07/10/019164ac0761926691b7eec3668b90ca8f.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/07/10/019164ac0761926691b7eec3668b90ca8f.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline; opacity: 1;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/gxgjeans-1032.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/010425d39ff1f098b71b12a231e1d3cfdc.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/010425d39ff1f098b71b12a231e1d3cfdc.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline; opacity: 1;">
+                    </a>
+                </li>
+                <li class="logo-brand-switch" data-page="0">
+                    <a class="prev iconfont" href="javascript:;">&lt;</a>
+                    <a class="next iconfont" href="javascript:;">&gt;</a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/lee-1694.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/0132272961db09febdf0fe3d6933b63abc.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/0132272961db09febdf0fe3d6933b63abc.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/lining-3568.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img11.static.yhbimg.com/yhb-img01/2019/07/24/11/01f39fa5d16d8763be50e9501c0d0f6aa2.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/07/24/11/01f39fa5d16d8763be50e9501c0d0f6aa2.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline; opacity: 1;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/storebynigo-1306.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/07/10/01a9f42ebeacaae8836f63e6fdf4227df7.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/07/10/01a9f42ebeacaae8836f63e6fdf4227df7.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/dusty-97.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/04/11/17/011152752eb2b3710405c1efc32c0115e0.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/04/11/17/011152752eb2b3710405c1efc32c0115e0.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline; opacity: 1;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/viishow-1360.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/07/10/10/01d60fcc066df315bcc9db5203fb42f5ec.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/07/10/10/01d60fcc066df315bcc9db5203fb42f5ec.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline; opacity: 1;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/chocoolate-1422.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/01cf7bc49aa6594c5f998af13218637b3e.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/01cf7bc49aa6594c5f998af13218637b3e.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/comback-1494.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img11.static.yhbimg.com/yhb-img01/2019/07/10/10/01b59d97b760b5c186224babd5d37ebca2.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/07/10/10/01b59d97b760b5c186224babd5d37ebca2.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/1468203506692--815362485-1054.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/07/10/01771c2d81c1f631aa06ded9e85748814c.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/07/10/01771c2d81c1f631aa06ded9e85748814c.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/onitsukatiger-1476.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/21/10/011d88696ad255971e86d1729b2c87c593.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/21/10/011d88696ad255971e86d1729b2c87c593.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline; opacity: 1;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/itsclimax-4098.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/01b7aba43fdf38fa83903e768f7b717a6a.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/01b7aba43fdf38fa83903e768f7b717a6a.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline; opacity: 1;">
+                    </a>
+                </li>
+                <li data-page="0">
+                    <a href="https://www.yohobuy.com/shop/hlajeans-4006.html" target="_blank" title="">
+                        <img class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/07/10/10/01f36ddbfd7db68e783cdc3f6ca228f58b.jpg?imageView2/2/w/185/h/86/q/90"
+                            alt=""
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/07/10/10/01f36ddbfd7db68e783cdc3f6ca228f58b.jpg?imageView2/2/w/185/h/86/q/90"
+                            style="display: inline; opacity: 1;">
+                    </a>
+                </li>
+                <li class="brand-more" data-page="0">
+                    <a href="http://www.yohobuy.com/brands?gender=1,3" target="_blank">MORE &gt;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 潮流上装 -->
+    <div class="singlehot">
+        <div class="title-rq">
+            <h2 class="floor-title">潮流上装</h2>
+        </div>
+        <div class="tpl-body clearfix">
+            <div class="tpl-nav imgopacity">
+                <div class="tpl-keywords">
+                    <a class="keywords0" title="上衣" href="https://www.yohobuy.com/list/ci5-gd1.html"
+                        target="_blank"><img class="lazy"
+                            data-original="//img11.static.yhbimg.com/yhb-img01/2019/03/25/11/017be7cc88b521b7ebbcd6a71f4349eb7b.jpg?imageView2/2/w/185/h/152"
+                            alt="上衣"
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/03/25/11/017be7cc88b521b7ebbcd6a71f4349eb7b.jpg?imageView2/2/w/185/h/152"
+                            style="display: block;"></a>
+                    <a class="keywords1" title="满减"
+                        href="https://www.yohobuy.com/sale/special/gd1.html?specialsale_id=5" target="_blank"><img
+                            class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/27/16/01c932c548a37e5b218fae2ad7d3e963fe.jpg?imageView2/2/w/185/h/152"
+                            alt="满减"
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/27/16/01c932c548a37e5b218fae2ad7d3e963fe.jpg?imageView2/2/w/185/h/152"
+                            style="display: block;"></a>
+                </div>
+                <div class="tpl-category clearfix">
+                    <a href="https://www.yohobuy.com/list/ci45-gd1.html" title="T恤" target="_blank">T恤</a>
+                    <a href=" https://www.yohobuy.com/list/ci61-gd1.html" title="卫衣" target="_blank">卫衣</a>
+                    <a href="https://www.yohobuy.com/list/ci72-gd1.html" title="夹克" target="_blank">夹克</a>
+                    <a href="https://www.yohobuy.com/list/ci56-gd1.html" title="衬衫" target="_blank">衬衫</a>
+                    <a href="https://www.yohobuy.com/list/ci48-gd1.html" title="POLO衫" target="_blank">POLO衫</a>
+                    <a href="https://www.yohobuy.com/list/ci207-gd1.html" title="防风外套" target="_blank">防风外套</a>
+                    <a href="https://www.yohobuy.com/shop/madness-1482.html" title="MADNESS" target="_blank">MADNESS</a>
+                    <a href="https://www.yohobuy.com/shop/dickies-1474.html" title="Dickies" target="_blank">Dickies</a>
+                    <a href="https://www.yohobuy.com/shop/lee-1694.html" title="Lee" target="_blank">Lee</a>
+                    <a href="https://www.yohobuy.com/shop/smg-1506.html" title="SMG" target="_blank">SMG</a>
+                    <a href="https://www.yohobuy.com/shop/nbastyle-154.html" title="Levi’s" target="_blank">Levi’s</a>
+                    <a href="https://www.yohobuy.com/shop/hlajeans-4006.html" title="黑鲸" target="_blank">黑鲸</a>
+                </div>
+            </div>
+            <div class="tpl-brands imgopacity clearfix">
+                <ul>
+                    <li class="tx"><a title="T恤" href="https://www.yohobuy.com/boys-new/ci45-gd1.html"
+                            target="_blank"><img class="lazy"
+                                data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/0167c6fad78dbc5d47a9925b813c6aa060.jpg?imageView2/2/w/378/h/248"
+                                alt="潮流上装品牌"
+                                src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/0167c6fad78dbc5d47a9925b813c6aa060.jpg?imageView2/2/w/378/h/248"
+                                style="display: block; opacity: 1;"></a></li>
+                    <li class="wy"><a title="卫衣" href="https://www.yohobuy.com/boys-new/ci61-gd1.html"
+                            target="_blank"><img class="lazy"
+                                data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/01e41c6693a85b48af3b9f10a5f747aa45.jpg?imageView2/2/w/378/h/248"
+                                alt="潮流上装品牌"
+                                src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/01e41c6693a85b48af3b9f10a5f747aa45.jpg?imageView2/2/w/378/h/248"
+                                style="display: block;"></a></li>
+                </ul>
+            </div>
+            <div class="tpl-types imgopacity clearfix">
+                <ul>
+                    <li><a title="" href="https://www.yohobuy.com/shop/madness-1482.html" target="_blank"><img
+                                class="lazy"
+                                data-original="//img11.static.yhbimg.com/yhb-img01/2019/07/24/13/015e0eb7fc641d26d7d3ff4f0c5cd0ee56.jpg?imageView2/2/w/185/h/248"
+                                alt=""
+                                src="//img11.static.yhbimg.com/yhb-img01/2019/07/24/13/015e0eb7fc641d26d7d3ff4f0c5cd0ee56.jpg?imageView2/2/w/185/h/248"
+                                style="display: block; opacity: 1;"></a></li>
+                    <li><a title="" href="https://www.yohobuy.com/shop/genanx-300.html" target="_blank"><img
+                                class="lazy"
+                                data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/21/10/01875f10314b6561866a97d36e0d8f113b.jpg?imageView2/2/w/185/h/248"
+                                alt=""
+                                src="//img11.static.yhbimg.com/yhb-img01/2019/08/21/10/01875f10314b6561866a97d36e0d8f113b.jpg?imageView2/2/w/185/h/248"
+                                style="opacity: 1; display: block;"></a></li>
+                    <li><a title="" href="https://www.yohobuy.com/shop/chocoolate-1422.html" target="_blank"><img
+                                class="lazy"
+                                data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/21/10/015cca68611da8bf04206caf584d38cf8b.jpg?imageView2/2/w/185/h/248"
+                                alt=""
+                                src="//img11.static.yhbimg.com/yhb-img01/2019/08/21/10/015cca68611da8bf04206caf584d38cf8b.jpg?imageView2/2/w/185/h/248"
+                                style="display: block;"></a></li>
+                    <li><a title="" href="https://www.yohobuy.com/shop/storebynigo-1306.html" target="_blank"><img
+                                class="lazy"
+                                data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/01980a158032951e053890b58bade1955d.jpg?imageView2/2/w/185/h/248"
+                                alt=""
+                                src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/01980a158032951e053890b58bade1955d.jpg?imageView2/2/w/185/h/248"
+                                style="display: block; opacity: 1;"></a></li>
+                    <li><a title="" href="https://www.yohobuy.com/shop/levis-1248.html" target="_blank"><img
+                                class="lazy"
+                                data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/0105481fd4ac174ac6eaf2ca6360878114.jpg?imageView2/2/w/185/h/248"
+                                alt=""
+                                src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/0105481fd4ac174ac6eaf2ca6360878114.jpg?imageView2/2/w/185/h/248"
+                                style="display: block; opacity: 1;"></a></li>
+                    <li><a title="" href="https://www.yohobuy.com/shop/stussy-1292.html" target="_blank"><img
+                                class="lazy"
+                                data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/012fcdc3f0cbc50a8b8825237073cb71fd.jpg?imageView2/2/w/185/h/248"
+                                alt=""
+                                src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/10/012fcdc3f0cbc50a8b8825237073cb71fd.jpg?imageView2/2/w/185/h/248"
+                                style="display: block; opacity: 1;"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tpl-products clearfix">
+            <ul>
+                <li><a href="https://www.yohobuy.com/product/52167788.html" title="" target="_blank"><img class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/11/01be4840adaa02b94dd71c525f9dd28e84.jpg?imageView2/2/w/222/h/298"
+                            alt=""
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/11/01be4840adaa02b94dd71c525f9dd28e84.jpg?imageView2/2/w/222/h/298"
+                            style="display: block; opacity: 1;"></a></li>
+                <li><a href="https://www.yohobuy.com/product/52171264.html" title="" target="_blank"><img class="lazy"
+                            data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/21/11/013e254dd0ce978713444d2e4e4447b5db.jpg?imageView2/2/w/222/h/298"
+                            alt=""
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/21/11/013e254dd0ce978713444d2e4e4447b5db.jpg?imageView2/2/w/222/h/298"
+                            style="display: block; opacity: 1;"></a></li>
+                <li><a href="https://www.yohobuy.com/product/52164034.html" title="" target="_blank"><img class="lazy"
+                            data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/21/11/01305e7dbd28f0d94ae717eec8bb11147a.jpg?imageView2/2/w/222/h/298"
+                            alt=""
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/21/11/01305e7dbd28f0d94ae717eec8bb11147a.jpg?imageView2/2/w/222/h/298"
+                            style="display: block; opacity: 1;"></a></li>
+                <li><a href="https://www.yohobuy.com/product/52103062.html" title="" target="_blank"><img class="lazy"
+                            data-original="//img11.static.yhbimg.com/yhb-img01/2019/08/21/11/01a42ea45f4b79b4b5edde9dcef2692752.jpg?imageView2/2/w/222/h/298"
+                            alt=""
+                            src="//img11.static.yhbimg.com/yhb-img01/2019/08/21/11/01a42ea45f4b79b4b5edde9dcef2692752.jpg?imageView2/2/w/222/h/298"
+                            style="display: block; opacity: 1;"></a></li>
+                <li><a href="https://www.yohobuy.com/product/52177424.html" title="" target="_blank"><img class="lazy"
+                            data-original="//img10.static.yhbimg.com/yhb-img01/2019/08/21/11/019c6691bfd99c96ad32432c1e9042812f.jpg?imageView2/2/w/222/h/298"
+                            alt=""
+                            src="//img10.static.yhbimg.com/yhb-img01/2019/08/21/11/019c6691bfd99c96ad32432c1e9042812f.jpg?imageView2/2/w/222/h/298"
+                            style="display: block;"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 潮流下装 -->
+
+
+    <!-- 时尚鞋履 -->
+
+
+    <!-- 潮流配饰 -->
+
+
+    <!-- 新品上架 -->
+    <div class="singlehot">
+        <div class="title-rq">
+            <h2 class="floor-title">新品上架</h2>
+        </div>
+        <div class="productlist">
+        </div>
+    </div>
+
+
+    <!-- 页面底部 -->
+    <div class="yoho-footer">
+        <div class="footerbottom">
+            <div class="promise">
+                <div class="center-content">
+                    <div class="left">
+                        <span class="iconfont rgbf"></span>
+                        <span class="text-danger">100%</span>
+                        <span class="rgbf">品牌正品</span>
+                    </div>
+                    <div class="left">
+                        <span class="iconfont rgbf"></span>
+                        <span class="text-danger">7天</span>
+                        <span class="rgbf">无理由退换货</span>
+                    </div>
+                    <div class="left">
+                        <span class="iconfont rgbf"></span>
+                        <a href="//www.yohobuy.com/service/client" target="_blank" rel="nofollow">
+                            <span class="text-danger">便捷</span>
+                            <span class="rgbf">在线客服</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-help">
+                <div class="center-content">
+                    <div class="left">
+                        <ul class="clearfix">
+                            <li class="left">
+                                <p>
+                                    <span>新手专区</span>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=168" target="_blank"
+                                        rel="nofollow">注册登录</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=170" target="_blank"
+                                        rel="nofollow">购物结算</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=172" target="_blank"
+                                        rel="nofollow">下单支付</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=174" target="_blank"
+                                        rel="nofollow">收货评价</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>会员中心</span>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=156" target="_blank"
+                                        rel="nofollow">会员制度</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=158" target="_blank"
+                                        rel="nofollow">会员优惠</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=160" target="_blank"
+                                        rel="nofollow">账户管理</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=162" target="_blank"
+                                        rel="nofollow">密码管理</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>购物指南</span>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=180" target="_blank" rel="nofollow">发票</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=182" target="_blank"
+                                        rel="nofollow">尺码对照</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=184" target="_blank"
+                                        rel="nofollow">尺码解读</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=186" target="_blank"
+                                        rel="nofollow">商品咨询</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>支付方式</span>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=192" target="_blank"
+                                        rel="nofollow">在线支付</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=194" target="_blank"
+                                        rel="nofollow">货到付款</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=196" target="_blank"
+                                        rel="nofollow">分期支付</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=198" target="_blank"
+                                        rel="nofollow">优惠券、有货币</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>配送方式</span>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=204" target="_blank"
+                                        rel="nofollow">配送说明</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=206" target="_blank"
+                                        rel="nofollow">运费说明</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=208" target="_blank"
+                                        rel="nofollow">验货签收</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=210" target="_blank"
+                                        rel="nofollow">收货样品</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>售后服务</span>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=214" target="_blank"
+                                        rel="nofollow">退换货政策</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=216" target="_blank"
+                                        rel="nofollow">退换货流程</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=220" target="_blank"
+                                        rel="nofollow">投诉与建议</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/service/client" target="_blank" rel="nofollow">在线客服</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>APP常见问题</span>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=224" target="_blank"
+                                        rel="nofollow">IPhone版</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=226" target="_blank"
+                                        rel="nofollow">Android版</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=228" target="_blank"
+                                        rel="nofollow">wap版</a>
+                                </p>
+                                <p>
+                                    <a href="//www.yohobuy.com/help/detail?id=230" target="_blank"
+                                        rel="nofollow">IPAD版</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-link">
+                <div class="center-content clearfix">
+                    <div class="about-us">
+                        <div class="left-flag">
+                            <a class="govicon"
+                                href="http://www.jsdsgsxt.gov.cn/mbm/entweb/elec/certView.shtml?siteId=f2b6e3b8d18241afb8dd6cadf7f15406"
+                                target="_blank" rel="nofollow">
+                                <div class="govimg"></div>
+                            </a>
+                            <a href="https://ss.knet.cn/verifyseal.dll?sn=e14021832010046477dka7000000&amp;ct=df&amp;a=1&amp;pa=0.5902942178957805"
+                                target="_blank" rel="nofollow">
+                                <img
+                                    src="//static.yohobuy.com/images/v3/icon/credit-flag3.png?imageView2/2/interlace/1/q/75">
+                            </a>
+                            <a href="http://www.isc.org.cn/" target="_blank" rel="nofollow">
+                                <img src="//static.yohobuy.com/images/v3/icon/isc2.png?imageView2/2/interlace/1/q/75">
+                            </a>
+                        </div>
+                        <p class="links">
+                            <a href="//www.yohobuy.com" rel="nofollow">返回首页</a>
+                            <a href="//www.yohobuy.com/yohobuy.html" rel="nofollow">YOHO!BUY 有货</a>
+                            <a href="//www.yohobuy.com/newpower.html" rel="nofollow">新力传媒</a>
+                            <a href="//www.yohobuy.com/contact.html" rel="nofollow">联系我们</a>
+                            <a href="//shop.yohobuy.com/settled" rel="nofollow">商家入驻</a>
+                            <a href="//www.yohobuy.com/privacy.html" rel="nofollow">隐私条款</a>
+                            <a href="//www.yohobuy.com/link.html" rel="nofollow">友情链接</a>
+                            <a href="//www.yohobuy.com/brands">潮流品牌大全</a>
+                            <a href="//www.yohobuy.com/cate">潮流品类大全</a>
+                            <a href="//www.yohobuy.com/cpdq">潮流产品大全</a>
+                            <a href="//www.yohobuy.com/guang/news">潮流资讯</a>
+                            <a href="//www.yohobuy.com/guang/boys-t2">穿衣搭配(男生版)</a>
+                            <a href="//www.yohobuy.com/guang/girls-t2">穿衣搭配(女生版)</a>
+                            <a href="//www.yohobuy.com/guang/boys-t1001">潮流人气</a>
+                            <a href="//www.yohobuy.com/guang/boys-t4">潮流潮品</a>
+                            <a href="//www.yohobuy.com/guang/boys-t22">潮流视频</a>
+                            <a class="police" target="_blank"
+                                href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32010502010132"
+                                rel="nofollow">苏公网安备 32010502010132号</a>
+                            <a target="_blank" href="http://www.yohobuy.com/help/qualificationInfo"
+                                rel="nofollow">出版物经营许可证</a>
+                            <a target="_blank" href="https://www.yohobuy.com/help/detail?id=238"
+                                rel="nofollow">苏B2-20120395</a>
+                            <a target="_blank" href="https://www.yohobuy.com/help/detail?id=266"
+                                rel="nofollow">食品经营许可证</a>
+                        </p>
+                    </div>
+                    <div class="copyright">
+                        <p></p>
+                        <p>
+                            CopyRight © 2007-2019 南京新与力文化传播有限公司
+                            <a class="rbg6" href="http://www.beian.miit.gov.cn" target="_blank"
+                                rel="nofollow">苏ICP备09011225号</a>
+                            NewPower Co. 版权所有 江苏省南京市建邺区嘉陵江东街18号南京国家广告产业园5栋17，18楼 025-87781000
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-link-container">
+                <div class="center-content clearfix">
+                    <div class="link-info left">友情链接：</div>
+                    <div class="link-section left">
+                        <ul class="clearfix up" style="top:0px">
+                            <li><a href="http://www.yohobuy.com" target="_blank">有货</a></li>
+                            <li><a href="http://www.chinasspp.com/" target="_blank">时尚品牌网</a></li>
+                            <li><a href="http://www.chinasspp.com/brand/" target="_blank">服装品牌</a></li>
+                            <li><a href="http://www.hunliji.com" target="_blank">拍婚纱照</a></li>
+                            <li><a href="http://www.912688.com" target="_blank">搜好货网</a></li>
+                            <li><a href="http://baike.xbiao.com/" target="_blank">手表知识</a></li>
+                            <li><a href="https://www.38fan.com/" target="_blank">丽人时尚网</a></li>
+                            <li><a href="http://www.7360.cc/" target="_blank">公司评价</a></li>
+                            <li><a href="https://wiki.smzdm.com/" target="_blank">商品百科</a></li>
+                            <li><a href="http://www.shikee.com/" target="_blank">免费试用</a></li>
+                            <li><a href="http://www.hznzcn.com/" target="_blank">女装批发拿货</a></li>
+                            <li><a href="http://www.zocai.com/" target="_blank">佐卡伊</a></li>
+                            <li><a href="http://www.china-ef.com" target="_blank">品牌服装网</a></li>
+                            <li><a href="http://www.nv43.com" target="_blank">时尚女人网</a></li>
+                            </ul>
+
+                            <ul class="clearfix down" style="top:32px">
+                            <li><a href="https://www.1diandian.net" target="_blank">生日礼物</a></li>
+                            <li><a href="http://bbs.ziling.com" target="_blank">娱乐社区</a></li>
+                            <li><a href="http://fuwu.huangye88.com" target="_blank">商务服务网</a></li>
+                            <li><a href="https://www.hznzcn.com" target="_blank">女装代理</a></li>
+                            <li><a href="http://www.gougoujp.com/" target="_blank">日本代购</a></li>
+                            <li><a href="http://www.91lai.com" target="_blank">海淘网官网</a></li>
+                            <li><a href="http://www.qqqnm.com" target="_blank">海淘攻略</a></li>
+                            <li><a href="http://www.haitaoshen.com" target="_blank">海淘资讯</a></li>
+                            <li><a href="http://china.globrand.com" target="_blank">品牌加盟网</a></li>
+                            <li><a href="http://www.lipin-bj.cn" target="_blank">北京礼品公司</a></li>
+                            <li><a href="https://www.haohua.com" target="_blank">好花网</a></li>
+                            <li><a href="http://www.eeff.net" target="_blank">服装设计</a></li>
+                            <li><a href="http://so.jiameng.com/" target="_blank">品牌加盟项目</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--/footer-link-container-->
+        </div>
+    </div>
+
+    <!-- 悬浮框 -->
+    <div class="right-floating-layer min">
+        <div class="qrcode-hover-box">
+            <a class="layer-box1" href="#">
+                <!-- <span class="qrcode-img">&nbsp;</span> -->
+            </a>
+            <div class="download-app-box">
+                <div class="download-app-left">
+                    <div class="qr-code-img we-chat-code">
+                        <img
+                            src="//img12.static.yhbimg.com/evidenceImages/2017/11/14/10/02c21ad1b55c13f8bcd9ae5b643c3c2374.png">
+                    </div>
+                    <h5 class="qr-words">微信扫一扫</h5>
+                    <h5 class="qr-words">关注公众号，送球鞋</h5>
+                </div>
+                <div class="download-app-right">
+                    <div class="qr-code-img mobile-code">
+                        <img
+                            src="//img11.static.yhbimg.com/evidenceImages/2017/11/14/10/01dce3f4c011e664dcfed9cd836377aeb7.png">
+                    </div>
+                    <h5 class="qr-words">下载手机客户端</h5>
+                    <h5 class="qr-words qr-more">
+                        <a href="" target="_blank">更多客户端下载</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="layer-box2">
+                <span class="iconfont">回到顶部</span>
+            </div>
+    </div>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/homepage.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

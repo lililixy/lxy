@@ -1,0 +1,204 @@
+/* 详情页 */
+/* 图片详情 */
+.mainimg{
+    position: relative;
+}
+.img-main{
+    width: 565px;
+    height: 600px;
+    margin-top: 10px;
+    position: relative;
+}
+.bigimg{
+    width: 430px;
+    height: 560px;
+}
+/* .img-main .bigimg{
+    position: relative;
+} */
+.img-main .bigimg img{
+    width: 420px;
+    height: 560px;
+    border: 2px solid #000;
+}
+.img-main .smimg{
+    position: absolute;
+    right: 50px;
+    top:0
+} 
+.img-main .smimg img{
+    width: 75px;
+    height: 100px;
+    /* border: 2px solid #000; */
+    margin-bottom: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+/* 放大镜 */
+.bf{
+    width: 558px;
+    height: 558px;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left: 530px;
+    z-index: 1000;
+    visibility: hidden;
+}
+.bpic{
+    width: 750px;
+    height: 1000px;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.sf{
+    width: 50px;
+    height: 50px;
+    background: orange;
+    opacity: 0.3;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+}
+/* 操作详情 */
+.op{
+    width: 555px;
+}
+.op h3{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+.op .line{
+    width: 100%;
+    height: 2px;
+    border-bottom: 1px solid #eaeceb;
+    margin: 20px 0;
+}
+.op .price-bg{
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 40px;
+}
+.op .price-bg .price-sm{
+    color: #000;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.chose-count .shu{
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 40px;
+    margin-left: 17px;
+    float: left;
+}
+.num-wraper{
+    float: left;
+}
+.num-wraper span{
+    line-height: 40px;
+}
+.num-wraper .minus-plus-jian{
+    width: 50px;
+    height: 40px;
+    background-color: #e0e0e0;
+    font-size: 30px;
+    color: #000;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+}
+.num-wraper .minus-plus-jia{
+    width: 50px;
+    height: 40px;
+    background-color: #e0e0e0;
+    font-size: 30px;
+    color: #000;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+}
+.num-wraper i{
+    font-style: normal;
+    display: block
+}
+.num-wraper .num{
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    border: 1px solid #000
+}
+.add-to-cart{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    height: 46px;
+    line-height: 46px;
+    width: 180px;
+    text-align: center;
+    color: #fff;
+    background: #d0021b;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+/* 加入购物车后的窗口 */
+.balance{
+    display: none;
+    margin-top: 100px
+}
+.balance .success-tip {
+    color: #222;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+ .balance .cart-total {
+    color: #999;
+    font-size: 12px;
+}
+.balance .balance-btns {
+    margin-top: 20px;
+}
+.balance-btns .go-cart{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    height: 46px;
+    line-height: 46px;
+    width: 180px;
+    text-align: center;
+    color: #fff;
+    background: #d0021b;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.balance-btns .go-cart i{
+    font-size: 20px
+}
+.balance-btns .keep-shopping{
+    display: inline-block;
+    width: 140px;
+    height: 46px;
+    text-align: center;
+    line-height: 42px;
+    margin-bottom: 15px;
+    background: #fff;
+    color: #222;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: pointer;
+}
