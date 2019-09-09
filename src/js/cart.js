@@ -44,19 +44,6 @@ $(document).ready(function () {
                 $('.sig').show()
                 $('.quit').hide()
             }
-            // $(window).scroll(function () {
-            //     var wHeight = $('.cart-fixed-submit').offset();
-            //     var xheight=wHeight.top;
-            //     var wTop = $(window).scrollTop()+320;
-            //     console.log(xheight)
-            //     console.log(wTop)
-            //     if (wTop<464) {
-            //      $('.cart-fixed-submit').addClass('total')
-            //     }
-            //       if(wTop>=464){
-            //         $('.cart-fixed-submit').removeClass('total')
-            //     }
-            // });
             $('.cart-operation .cart-del-btn').on('click', function () {
                 $this.remove(this, csid, cnum);
             });
@@ -172,15 +159,6 @@ $(document).ready(function () {
             if ($('.qx').prop('checked')) {
                 $input.prop('checked', true);
             }
-            //思路：选中的input的数量和余下input长度一致，全选。
-            // $input.on('click',function(){            
-            //     if($('.promotion-pool input:checked').not('.qx').length === $input.length){
-            //         $('.qx').prop('checked',true);
-            //     }else{
-            //         $('.qx').prop('checked',false);
-            //     }
-            //     $this.calc()
-            // });
 
             $('.ic').on('click', function () {
                 if ($('.promotion-pool input:checked').not('.qx').length === $input.length) {
@@ -191,9 +169,6 @@ $(document).ready(function () {
                 $this.calc();//重新计算
             });
         }
-        // smcalc($this){
-        //   $this.prevall('.product-price').find('.p-product-price')
-        // }
         showgoodslist(sid, num) {
             var $this = this
             $.ajax({
@@ -246,7 +221,6 @@ $(document).ready(function () {
             });
             $('.money').html('￥' + allprice);
             $('.select-num .ins').html(allnum);
-            // $('#cart-num').html(allnum);
         }
     }
     new cart().init()

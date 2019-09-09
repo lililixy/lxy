@@ -137,7 +137,6 @@ let myobj = {
             this.jia = $('.num-wraper .minus-plus-jia');
             this.shu = $('.num-wraper .num');
             this.shu1 = 0;
-            this.shu2 = 0
         }
         init() {
             var $this = this;
@@ -146,13 +145,14 @@ let myobj = {
                 if ($($this.shu).html() == 0) {
                     $($this.shu).html() = 0
                 }
-                $this.shu2 = $this.shu1--;
-                $($this.shu).html($this.shu2)
+                $this.shu1--;
+                $($this.shu).html($this.shu1)
 
             });
+            this.shu1 = this.shu.html()
             this.jia.on('click', function () {
-                $this.shu2 = $this.shu1++;
-                $($this.shu).html($this.shu2)
+                $this.shu1++;
+                $($this.shu).html($this.shu1)
 
             })
         }
@@ -186,9 +186,7 @@ let myobj = {
 //加入购物车
 ! function ($) {
     //2.加入购物车。
-    let sidarr = []; //存放商品的编号数组
-    let numarr = []; //存放商品的数量数组
-    //2.1取cookie(假设是第二次点击，获取第一次的cookie),提前约定cookie的key值
+    let sidarr = [];
     //cookie添加， 获取， 删除
     let myobj = {
         addcookie: function (key, value, day) {
@@ -209,8 +207,6 @@ let myobj = {
             addcookie(key, '', -1);
         }
     }
-    //编号：[2,4,5] 数量：[12,34,68]
-    //将cookie取出转换成数组，利用数组进行判断是否是第一次。
     function cookieToArray() {
         if (myobj.getcookie('cookiesid') && myobj.getcookie('cookienum')) {
             sidarr = myobj.getcookie('cookiesid').split(',') //cookie存放商品编号的key值
@@ -222,14 +218,10 @@ let myobj = {
             $('#balance').show();
             //通过当前点击的按钮，获取当前商品的(图片)sid。
             let $sid = $('.bigimg img').attr('sid');
-            //是否第一次，获取cookie才能知道是否是第一次。第一次会存储cookie(编号和数量)
+    
             cookieToArray(); //取出转换成数组
             if ($.inArray($sid, sidarr) !== -1) { //存在
-                //通过sid获取对应的数量，取出数量+当前新添加的商品的数量。
-                // console.log(numarr);
-                // console.log(sidarr); //当前sid对应的数组的索引位置
-                // console.log($.inArray($sid, sidarr)); //当前sid对应的数组的索引位置
-                // console.log(numarr[$.inArray($sid, sidarr)]);
+
                 let changenum = parseInt(numarr[$.inArray($sid, sidarr)]) + parseInt($('#num').html());//原来的数量+当前的数量。
                 numarr[$.inArray($sid, sidarr)] = changenum;//数组值改变
                 myobj.addcookie('cookienum', numarr.toString(), 10);//继续添加cookie 

@@ -5,7 +5,7 @@
         constructor() {
             this.li = $('.yoho-list');//获取ul
             this.kehu = $('.kehufuwu');
-            // this.kehulist=$('.kuhufuwu .kehu-list');
+
         }
         init() {
             let $alist = this.li.find('li').children('a');//获取a标签集合
@@ -29,44 +29,6 @@
     }
     new yohoList().init()
 }(jQuery)
-//退出用户登录状态
-// $(document).ready(function(){
-//     $('.quit').on('click',function(){
-//     myobj.delcookie('yhuser')
-//     })
-// })
-// 显示登录状态
-//使用promise解决异步问题
-// var yohoid = location.search.substring(1)
-// let promise=new Promise((resolve,reject)=>{
-// // if(yohoid){
-//     $.ajax({
-//         url: '../../php/selsecusersid.php',
-//         data: {
-//             sid: yohoid
-//         },
-//         dataType: 'json'
-//     }).done(function (data) {
-//         $('.yhuser').html(data.user);
-//         resolve();//ajax是异步操作所以要用promise取值
-//         reject()
-//     })
-//     if ($('.yhuser').html() !== null) {
-//         $('.log').hide()
-//         $('.sig').hide()
-//         $('.quit').show()
-//     } else {
-//         $('.log').show()
-//         $('.sig').show()
-//         $('.quit').hide()
-//     }
-// // }
-// })
-// promise.then(function(){
-//     var yhuser=myobj.getcookie('yhuser')
-//     myobj.addcookie('cookieuser',yhuser,10)
-//     $('.yhuser').html(yhuser)
-// })
 // 将用户信息存储到cookie
 let myobj = {
     addcookie: function (key, value, day) {
@@ -88,11 +50,9 @@ let myobj = {
     }
 }
 var yhuser = myobj.getcookie('yhuser')
-// myobj.addcookie('cookieuser',yhuser,10)
 $('.yhuser').html(yhuser)
 
 
-// let promise=new Promise((resolve,reject)=>{
 //退出用户登录状态
 $('.quit').on('click', function () {
     $('.log').show()
@@ -101,15 +61,6 @@ $('.quit').on('click', function () {
     myobj.delcookie('yhuser');
     var yhuser = myobj.getcookie('yhuser');
     $('.yhuser').html('');
-    // if ($('.yhuser').html() == null) {
-    //     $('.log').show()
-    //     $('.sig').show()
-    //     $('.quit').hide()
-    // } else {
-    //     $('.log').hide()
-    //     $('.sig').hide()
-    //     $('.quit').show()
-    // }
 })
 if ($('.yhuser').html()!="") {
     $('.log').hide()
@@ -120,39 +71,7 @@ if ($('.yhuser').html()!="") {
     $('.sig').show()
     $('.quit').hide()
 }
-// })
 
-// promise
-// .then(ykzt())
-// .catch(function(){
-//     alert('删除失败')
-// })
-// if($('.yhuser').html()==null){
-//     ykzt(); 
-// }
-// ykzt()
-// //用户状态函数封装
-// function ykzt(){
-//     $.ajax({
-//         url: '../../php/getuser.php',
-//         dataType: 'json'
-//     }).done(function (data) {
-//         // console.log(data)
-//         $.each(data, function (index, value) {
-//             $('.yhuser').html(value.user);
-//             $('.yhuser').attr('sid', value.sid);
-//             if ($('.yhuser').html() !== null) {
-//                 $('.log').hide()
-//                 $('.sig').hide()
-//                 $('.quit').show()
-//             } else {
-//                 $('.log').show()
-//                 $('.sig').show()
-//                 $('.quit').hide()
-//             }
-//         })
-//     });
-// }
 //轮播图
 !function ($) {
     //轮播图效果
@@ -180,18 +99,20 @@ if ($('.yhuser').html()!="") {
                 })
             });
             this.left.on('click', function () {
+                $this.img.attr("src", $this.arr[$this.index]).fadeOut(0)
                 $this.index--;
                 if ($this.index < 0) {
                     $this.index = 9
                 }
-                $this.img.attr("src", $this.arr[$this.index])
+                $this.img.attr("src", $this.arr[$this.index]).fadeIn(100)
             });
             this.right.on('click', function () {
+                $this.img.attr("src", $this.arr[$this.index]).fadeOut(0)
                 $this.index++;
                 if ($this.index > 9) {
                     $this.index = 0
                 }
-                $this.img.attr("src", $this.arr[$this.index]);
+                $this.img.attr("src", $this.arr[$this.index]).fadeIn(100)
             });
             this.timer = setInterval(function () {
                 $this.right.click()
@@ -300,24 +221,22 @@ if ($('.yhuser').html()!="") {
             this.boxtop = $('.download-app-box');
             this.boxbottom = $('.layer-box2')
             this.timer = null;
+           
         }
         init() {
             var $this = this;
-            this.boxtop.hide()
+            // this.boxtop.hide()
             this.box.hover(function () {
                 clearTimeout($this.timer)
                 $this.timer = setTimeout(function () {
-                    $this.boxtop.slideDown()
+                    $this.boxtop.stop(true).slideDown()
                 }, 50)
             }, function () {
                 clearTimeout($this.timer)
-                $this.timer = setTimeout(function () {
-                    $this.boxtop.slideUp()
+                $this.timer= setTimeout(function () {
+                    $this.boxtop.stop(true).slideUp()
                 }, 50)
             });
-            // if($(window).height()>$(window).scrollTop()){
-            //     $($this.boxbottom).hide();
-            // }
             $(window).scroll(function () {
                 var wHeight = $(window).height();
                 var wTop = $(window).scrollTop();

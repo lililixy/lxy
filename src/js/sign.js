@@ -153,7 +153,7 @@
 }(jQuery)
 
 //密码强度验证
-$('#pwd').blur(function(){
+$('#pwd')[0].oninput=function(){
     let num=0;
     let numreg = /\d+/;
     let uppercase = /[A-Z]+/;
@@ -171,21 +171,20 @@ $('#pwd').blur(function(){
     if (othercase.test($(this).val())) {
         num++;
     }
-    console.log(num)
     switch (num) {
         case 1:
-            $('.pwd-intensity-container .low').css('background-color','red')
+            $('.pwd-intensity-container .low').css('background-color','red').siblings().css('background-color','#e8e8e8')
             flg2 = false;
             break;
         case 2:
         case 3:
-            $('.pwd-intensity-container .mid').css('background-color','yellow')
+            $('.pwd-intensity-container .mid').css('background-color','yellow').siblings().css('background-color','#e8e8e8')
             flg2 = true;
             break;
         case 4:
-             $('.pwd-intensity-container .high').css('background-color','green')
+             $('.pwd-intensity-container .high').css('background-color','green').siblings().css('background-color','#e8e8e8')
             flg2 = true;
             break;
 
     }
-})
+}
